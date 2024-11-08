@@ -9,6 +9,7 @@
 
     <AuthRegister />
     <AuthLogin />
+    <RentModal />
   </div>
 </template>
 

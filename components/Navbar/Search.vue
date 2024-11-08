@@ -1,6 +1,6 @@
 <template>
   <div
-    class="border-[1px] w-full md:w-2/6 md:mx-auto py-2 rounded-full shadow-sm hover:shadow-md transition-all cursor-pointer"
+    class="border-[1px] w-full max-w-md md:mx-auto py-2 rounded-full shadow-sm hover:shadow-md transition-all cursor-pointer"
   >
     <div class="flex flex-row items-center justify-between">
       <div class="text-sm font-semibold px-6">Anywhere</div>

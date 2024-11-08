@@ -2,6 +2,7 @@
   <div class="relative">
     <div class="flex flex-row items-center gap-3">
       <div
+        @click="rentOnOpen"
         class="hidden md:block text-sm font-semibold py-3 px-4 rounded-full hover:bg-neutral-100 transition-all cursor-pointer"
       >
         Airbnb your home
@@ -36,7 +37,9 @@
             >
               <span> {{ link.name }}</span>
             </DropdownMenuItem>
-            <DropdownMenuItem>Airbnb your home</DropdownMenuItem>
+            <DropdownMenuItem @click="rentOnOpen"
+              >Airbnb your home</DropdownMenuItem
+            >
             <DropdownMenuSeparator />
             <DropdownMenuItem @click="logout">
               <Icon name="solar:logout-3-bold" class="mr-2 h-4 w-4" />
@@ -61,6 +64,7 @@
 const user = useUser();
 const { onOpen } = useRegister();
 const { onOpen: loginOnOpen } = useLogin();
+const { onOpen: rentOnOpen } = useRentModal();
 
 const links = [
   {

@@ -2,7 +2,7 @@
   <AppContainer>
     <div class="pt-4 flex items-center justify-between overflow-x-auto">
       <NavbarCategory
-        v-for="item in categories"
+        v-for="item in categoriesList"
         :key="item.label"
         :label="item.label"
         :icon="item.icon"
@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-import { categories } from "@/utils";
+import { categoriesList } from "@/utils";
 
 const category = computed(() => useRoute().query.category);
 </script>

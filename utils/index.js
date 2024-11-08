@@ -1,4 +1,4 @@
-export const categories = [
+export const categoriesList = [
   {
     label: "Beach",
     icon: "majesticons:beach",
